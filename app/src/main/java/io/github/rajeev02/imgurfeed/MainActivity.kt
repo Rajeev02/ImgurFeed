@@ -9,8 +9,6 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import io.github.rajeev02.imgurfeed.databinding.ActivityMainBinding
-import io.github.rajeev02.imgurlib.ImgurAPI
-import io.github.rajeev02.imgurlib.apis.ImgurAPIv3
 
 class MainActivity : AppCompatActivity() {
 
@@ -33,10 +31,5 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
-
-        val imgurApi =  ImgurAPI();
-        Log.d("IMGUR-API", "a = ${imgurApi.a}")
-
-
     }
 }
