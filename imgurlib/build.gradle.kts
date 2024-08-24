@@ -16,4 +16,7 @@ dependencies {
     kapt(libs.moshi.kotlin.codegen)
     testImplementation(libs.junit)
     implementation(libs.converter.moshi)
+    testImplementation(libs.kotlinx.coroutines)
+    testImplementation(libs.kotlinx.coroutines.android)
+
 }

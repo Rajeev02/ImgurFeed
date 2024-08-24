@@ -21,6 +21,8 @@ comGoogleDevtoolsKspGradlePlugin = "2.0.20-1.0.24"
 moshi = "1.15.1"
 legacySupportV4 = "1.0.0"
 fragmentKtx = "1.8.2"
+kotlinxCoroutines = "0.19.2"
+kotlinxCoroutinesAndroid = "1.9.0-RC.2"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -42,6 +44,8 @@ com-google-devtools-ksp-gradle-plugin = { group = "com.google.devtools.ksp", nam
 moshi = { group = "com.squareup.moshi", name = "moshi", version.ref = "moshi" }
 androidx-legacy-support-v4 = { group = "androidx.legacy", name = "legacy-support-v4", version.ref = "legacySupportV4" }
 androidx-fragment-ktx = { group = "androidx.fragment", name = "fragment-ktx", version.ref = "fragmentKtx" }
+kotlinx-coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines", version.ref = "kotlinxCoroutines" }
+kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "kotlinxCoroutinesAndroid" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
