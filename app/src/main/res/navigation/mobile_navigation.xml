@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/navigation_hot"
-        android:name="io.github.rajeev02.imgurfeed.FeedFragment"
+        android:name="io.github.rajeev02.imgurfeed.ui.feed.FeedFragment"
         android:label="fragment_feed"
         tools:layout="@layout/fragment_feed">
         <argument app:argType="string" android:name="feed" android:defaultValue="hot" />
@@ -22,7 +22,7 @@
 
     <fragment
         android:id="@+id/navigation_top"
-        android:name="io.github.rajeev02.imgurfeed.FeedFragment"
+        android:name="io.github.rajeev02.imgurfeed.ui.feed.FeedFragment"
         android:label="fragment_feed"
         tools:layout="@layout/fragment_feed">
         <argument app:argType="string" android:name="feed" android:defaultValue="top" />

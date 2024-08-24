@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/feed"
-    tools:context=".FeedFragment">
+    tools:context=".ui.feed.FeedFragment">
     <TextView
         android:layout_gravity="center"
         android:id="@+id/tvFeedType"

@@ -57,6 +57,8 @@ dependencies {
 
     implementation(libs.retrofit)
     implementation(libs.moshi)
+    implementation(libs.glide)
+    implementation(libs.coil)
     kapt(libs.moshi.kotlin.codegen)
     testImplementation(libs.junit)
     implementation(libs.converter.moshi)

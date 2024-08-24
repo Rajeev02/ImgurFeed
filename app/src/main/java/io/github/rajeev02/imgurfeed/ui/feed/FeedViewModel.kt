@@ -1,4 +1,4 @@
-package io.github.rajeev02.imgurfeed
+package io.github.rajeev02.imgurfeed.ui.feed
 
 import android.util.Log
 import androidx.lifecycle.LiveData
