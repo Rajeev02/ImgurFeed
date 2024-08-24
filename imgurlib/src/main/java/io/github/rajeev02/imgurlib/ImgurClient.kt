@@ -1,6 +1,7 @@
 package io.github.rajeev02.imgurlib
 
 import io.github.rajeev02.imgurlib.apis.ImgurAPIv3
+import io.github.rajeev02.imgurlib.converters.EnumConverterFactory
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
@@ -24,6 +25,7 @@ object ImgurClient {
         Retrofit.Builder()
             .client(httpClient)
             .addConverterFactory(MoshiConverterFactory.create())
+            .addConverterFactory(EnumConverterFactory())
             .baseUrl(BASE_URL)
             .build()
     }
