@@ -50,7 +50,16 @@ class FeedRecycleAdapter() :
         val data = getItem(position)
         Log.d("daaartaa", data.toString())
         holder.binding.textView.text = data.title
-        holder.binding.imageView.load(data.images?.get(0)?.link)
+        if(data.images?.get(0)?.type.equals("image/jpeg")) {
+            holder.binding.imageView.load(data.images?.get(0)?.link) {
+                crossfade(true)
+                error(android.R.drawable.ic_menu_gallery)
+                placeholder(android.R.drawable.ic_menu_gallery)
+            }
+        } else if(data.images?.get(0)?.type.equals("video/mp4")) {
+            Log.d("Video Link", data.images?.get(0)?.link.toString())
+
+        }
 
 
     //      val data = getItem(position)
