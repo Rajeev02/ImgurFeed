@@ -33,7 +33,7 @@ class FeedFragment : Fragment() {
     ): View {
         val binding = FragmentFeedBinding.inflate(inflater, container, false)
         binding.rvGalleryFeed.layoutManager = LinearLayoutManager(requireContext())
-      binding.rvGalleryFeed.adapter = feedRecycleAdapter
+        binding.rvGalleryFeed.adapter = feedRecycleAdapter
 
         viewModel.feed.observe(viewLifecycleOwner){
             feedRecycleAdapter.submitList(it)

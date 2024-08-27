@@ -1,8 +1,9 @@
 package io.github.rajeev02.imgurlib.apis
 
 
-import io.github.rajeev02.imgurlib.models.GalleryResponse
-import io.github.rajeev02.imgurlib.models.TagsResponse
+import io.github.rajeev02.imgurlib.models.gallery.GalleryResponse
+import io.github.rajeev02.imgurlib.models.tag.TagResponse
+import io.github.rajeev02.imgurlib.models.tags.TagsResponse
 import io.github.rajeev02.imgurlib.params.Section
 import retrofit2.Call
 import retrofit2.Response
@@ -19,6 +20,10 @@ interface ImgurAPIv3 {
     ): Response<GalleryResponse>
 
     @GET("tags")
-   suspend fun getTags(): Response<TagsResponse>
+    suspend fun getTags(): Response<TagsResponse>
+
+    @GET("gallery/t/{tag}")
+    suspend fun getTagGallery(@Path("tag") tag: String): Response<TagResponse>
+
 
 }

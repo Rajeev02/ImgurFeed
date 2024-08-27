@@ -6,15 +6,15 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import io.github.rajeev02.imgurfeed.data.ImgurRepository
-import io.github.rajeev02.imgurlib.models.GalleryResponse
+import io.github.rajeev02.imgurlib.models.common.Image
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 class FeedViewModel : ViewModel() {
     private val repo  = ImgurRepository()
-    private val _feed = MutableLiveData<List<GalleryResponse.Data?>?>()
+    private val _feed = MutableLiveData<List<Image?>?>()
 
-    val feed: LiveData<List<GalleryResponse.Data?>?> = _feed
+    val feed: LiveData<List<Image?>?> = _feed
 
 
     fun updateFeed(feedType: String){
