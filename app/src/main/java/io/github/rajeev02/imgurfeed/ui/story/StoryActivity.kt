@@ -2,13 +2,13 @@ package io.github.rajeev02.imgurfeed.ui.story
 
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import androidx.recyclerview.widget.LinearLayoutManager
-import io.github.rajeev02.imgurfeed.R
+import androidx.viewpager2.widget.ViewPager2
 import io.github.rajeev02.imgurfeed.databinding.ActivityStoryBinding
 
 class StoryActivity : AppCompatActivity() {
@@ -36,6 +36,20 @@ class StoryActivity : AppCompatActivity() {
         }
 
         _binding.storyViewPager.adapter = storyPagerAdapter
+
+        _binding.storyViewPager.registerOnPageChangeCallback(pageChangeCallback)
+    }
+
+    private val pageChangeCallback = object : ViewPager2.OnPageChangeCallback() {
+        override fun onPageSelected(position: Int) {
+            super.onPageSelected(position)
+            Toast.makeText(this@StoryActivity, "Page Selected: $position", Toast.LENGTH_SHORT)
+                .show()
+
+
+
+        }
+
     }
 
     override fun onResume() {

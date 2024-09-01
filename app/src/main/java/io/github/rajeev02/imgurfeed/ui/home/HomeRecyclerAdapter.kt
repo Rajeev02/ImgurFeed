@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
+import coil.request.CachePolicy
 import coil.request.ImageRequest
 import io.github.rajeev02.imgurfeed.ImgurFeedApplication
 import io.github.rajeev02.imgurfeed.databinding.ListItemStoryHeadBinding
@@ -39,8 +40,8 @@ class HomeRecyclerAdapter :
     override fun onBindViewHolder(holder: StoriesViewHolder, position: Int) {
         val tag = getItem(position)
 
-        val height = (holder.binding.root.height ?: 200).coerceAtLeast(1)
-        val width = (holder.binding.root.width ?: 200).coerceAtLeast(1)
+        val height = (holder.binding.root.height ?: 200).coerceAtLeast(200)
+        val width = (holder.binding.root.width ?: 200).coerceAtLeast(200)
 
         Log.d("tag-${position}", tag.toString())
         holder.binding.storyHeadTextView.text = tag.name

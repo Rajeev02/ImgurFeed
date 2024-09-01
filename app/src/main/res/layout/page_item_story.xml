@@ -1,23 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
     android:layout_height="match_parent">
-    <TextView
-        android:id="@+id/imageUrlTextView"
+
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center|bottom"
-        android:textColor="@color/black"
-        tools:text="@string/app_name" />
+        android:layout_height="wrap_content">
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white_transparent_50" />
+
+    <View
+        android:scaleX="0"
+        android:id="@+id/progressView"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"/>
+
+    </FrameLayout>
 
     <ImageView
         android:id="@+id/storyImageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="center"
+        android:scaleType="centerCrop"
         android:background="#000000"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:background="#000000" />
+    <TextView
+        android:id="@+id/imageUrlTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center|bottom"
+        android:textColor="@color/black"
+        tools:text="@string/app_name" />
 
-    </FrameLayout>
+
+</LinearLayout>
