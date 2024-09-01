@@ -1,5 +1,5 @@
 # Story board
-Imgut Insta Feed
+Imgur Insta Feed
 
 https://imgur.com/
 
