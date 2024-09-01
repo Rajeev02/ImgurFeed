@@ -1,11 +1,3 @@
-# Story board
-Imgur Insta Feed
-
-https://imgur.com/
-
-Create account and application and use your key
-
-![imgur Insta Home Page](./homefeed.jpg)
 # Story Board
 Imgur Insta Feed
 
