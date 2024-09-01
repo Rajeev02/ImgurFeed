@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId = "io.github.rajeev02.imgurfeed"
-        minSdk = 26
+        minSdk = 28
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -64,6 +64,9 @@ dependencies {
     implementation(libs.androidx.media3.ui)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.viewpager2)
+    implementation(libs.coil.gif)
+    implementation(libs.coil.svg)
+    implementation(libs.coil.video)
     kapt(libs.moshi.kotlin.codegen)
     testImplementation(libs.junit)
     implementation(libs.converter.moshi)

@@ -30,6 +30,9 @@ media3ExoplayerDash = "1.4.0"
 media3Ui = "1.4.0"
 activity = "1.9.1"
 viewpager2 = "1.1.0"
+coilGif = "2.7.0"
+coilSvg = "2.7.0"
+coilVideo = "2.7.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -60,6 +63,9 @@ androidx-media3-exoplayer-dash = { group = "androidx.media3", name = "media3-exo
 androidx-media3-ui = { group = "androidx.media3", name = "media3-ui", version.ref = "media3Ui" }
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-viewpager2 = { group = "androidx.viewpager2", name = "viewpager2", version.ref = "viewpager2" }
+coil-gif = { group = "io.coil-kt", name = "coil-gif", version.ref = "coilGif" }
+coil-svg = { group = "io.coil-kt", name = "coil-svg", version.ref = "coilSvg" }
+coil-video = { group = "io.coil-kt", name = "coil-video", version.ref = "coilVideo" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

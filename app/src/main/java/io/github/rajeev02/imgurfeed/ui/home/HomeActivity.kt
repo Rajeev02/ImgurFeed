@@ -1,6 +1,7 @@
 package io.github.rajeev02.imgurfeed.ui.home
 
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.activity.viewModels
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
@@ -21,7 +22,6 @@ class HomeActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
 
       binding.rvStoryFeed.apply {
           layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
